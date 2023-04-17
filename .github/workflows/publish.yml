@@ -18,9 +18,9 @@ jobs:
            run: npm install
          - name: Package bundle
            run: npm run build
-         - name: Deploy Storybook
+         - name: Deploy Github page
            uses: peaceiris/actions-gh-pages@v3
            with:
               github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_branch: storybook
+              publish_branch: pages
               publish_dir: ./
