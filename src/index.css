@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+	@apply font-Poppins text-neutral text-[1rem] text-[17px] leading-[1.75]
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium text-neutralDark leading-[1.25]
+  }
+
+  h1 {
+    @apply text-[2rem] md:text-[2.375rem] lg:text-[2.625rem] xl:text-[2.875rem] 
+  }
+
+  h2 {
+    @apply text-[1.875rem] lg:text-[2.375rem] mb-[20px]
+  }
+
+  h4 {
+    @apply text-[20px]
+  }
+
+  h6 {
+    @apply text-[1rem] uppercase highlight font-semibold mb-[15px]
+  } 
+
+  .btn {
+    @apply py-[15px] px-[30px] font-medium capitalize rounded-[.75rem] duration-300 hover:shadow-btn will-change-auto
+  }
+
+  /*
+    <<<<<<<<<<<<<<< Global classes >>>>>>>>>>>>>>>
+   */
+
+  .section {
+    @apply pt-[90px] md:pt-[140px]
+    }
+
+  .section-header {
+    @apply lg:max-w-[800px] mx-auto mb-[60px] text-center
+  }
+
+  .btn-primary {
+    @apply gradient-1 text-white
+  }
+
+  .bigger-text {
+    @apply text-[1.25rem] 
+  }
+
+  .gradient-1 {
+	@apply bg-gradient-to-br from-primary to-secondary
+  }
+
+  .highlight {
+    @apply gradient-1
+  }
+
+  .bg-gradientBg1 {
+    @apply relative bg-fixed bg-cover z-10 after:absolute after:content-[''] after:inset-0 after:bg-white/50 after:-z-10
+  }
+
+  .bg-gradientBg2 {
+    @apply relative bg-fixed bg-cover z-10 after:absolute after:content-[''] after:inset-0 after:bg-white/50 after:-z-10
+  }
+
+  /*
+    <<<<<<<<<<<<<<< Navbar >>>>>>>>>>>>>>>
+  */
+
+  .header-active {
+    animation: slideIn .5s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*
+    <<<<<<<<<<<<<<< Hero >>>>>>>>>>>>>>>
+  */
+
+  .hero {
+    @apply py-[90px] md:px-[1rem]
+  }
+
+  /*
+    <<<<<<<<<<<<<<< Works >>>>>>>>>>>>>>>
+  */
+
+  .quote-card {
+    @apply relative after:absolute after:content-[''] after:w-full after:bottom-0 after:left-0 after:h-[.5rem] after:bg-tertiary/70
+  }
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.highlight {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slick-dots button:before {
+  font-size: 10px !important;
+  opacity: 1 !important;
+  color: #aab0bc !important;
+  transition: .3s ease !important;
+}
+
+.slick-dots button:hover:before  {
+  color: #697387 !important;
+}
+
+.slick-active button:before {
+  color: #697387 !important;
+}
