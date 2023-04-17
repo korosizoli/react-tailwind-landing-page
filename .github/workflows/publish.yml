@@ -13,10 +13,11 @@ jobs:
          - uses: actions/setup-node@v3
            with:
               node-version: "18"
-              cache: "yarn"
               registry-url: "https://registry.npmjs.org"
+         - name: Setup
+           run: npm install
          - name: Package bundle
-           run: yarn build
+           run: npm run build
          - name: Deploy Storybook
            uses: peaceiris/actions-gh-pages@v3
            with:
