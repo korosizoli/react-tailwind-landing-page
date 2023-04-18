@@ -9,7 +9,7 @@
     React JS / Tailwind CSS
   </p>
   
-  <a href="https://korosizoli.github.io/react-tailwind-landing-page/">
+  <a href="https://korosizoli.github.io/react-tailwind-landing-page/" target="_blank">
   <strong>Live demo</strong>
   </a>
 
