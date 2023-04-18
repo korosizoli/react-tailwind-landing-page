@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-	@apply font-Poppins text-neutral text-[1rem] text-[17px] leading-[1.75]
+	@apply font-Poppins text-neutral text-[1rem] leading-[1.75]
   }
 
   h1, h2, h3, h4, h5, h6 {
